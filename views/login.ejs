@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('./head'); %>
+</head>
+<body>
+    <div>
+        <form action="/login" method="post">
+            <input type="email" name="email" placeholder="Enter email" required>
+            <input type="password" name="pwd" placeholder="Enter password" required>
+            <button>Log In</button>
+        </form>
+    </div>
+    <% if(error){ %>
+        <div class="div-error">Please check your credentials !</div>
+    <% }%>
+</body>
+</html>
